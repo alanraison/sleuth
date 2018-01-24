@@ -1,0 +1,6 @@
+zuul:
+  routes:
+    test:
+      path: /**
+      url: http://localhost:${client-b-port}
+spring.application.name: client-a
