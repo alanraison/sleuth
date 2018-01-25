@@ -1,0 +1,25 @@
+version: '3'
+services:
+  zipkin:
+    image: openzipkin/zipkin
+    ports:
+    - "9411:9411"
+  client-a:
+    build:
+      context: sleuth-client-a
+    environment:
+      SPRING_SLEUTH_SAMPLER_PERCENTAGE: 1.0
+      SPRING_ZIPKIN_BASEURL: http://zipkin:9411
+      ZUUL_ROUTES_TEST_URL: http://client-b:8080
+    ports:
+    - 8080
+    depends_on:
+    - zipkin
+  client-b:
+    build:
+      context: sleuth-client-b
+    environment:
+      SPRING_SLEUTH_SAMPLER_PERCENTAGE: 1.0
+      SPRING_ZIPKIN_BASEURL: http://zipkin:9411
+    depends_on:
+    - zipkin
