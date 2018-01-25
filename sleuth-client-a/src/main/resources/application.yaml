@@ -1,5 +1,0 @@
-zuul:
-  routes:
-    test:
-      path: /**
-      url: http://localhost:${client-b-port}

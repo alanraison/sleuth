@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.github.alanraison</groupId>
-	<artifactId>sleuth-clients</artifactId>
+	<artifactId>sleuth-services</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
@@ -20,12 +20,12 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
 		<spring-cloud.version>Edgware.SR1</spring-cloud.version>
-		<client.a.port>8090</client.a.port>
-	  <client.b.port>8081</client.b.port>
+		<service.a.port>8090</service.a.port>
+	  <service.b.port>8081</service.b.port>
 	</properties>
 
   <modules>
-    <module>sleuth-client-a</module>
-    <module>sleuth-client-b</module>
+    <module>sleuth-service-a</module>
+    <module>sleuth-service-b</module>
   </modules>
 </project>

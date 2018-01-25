@@ -1,0 +1,5 @@
+zuul:
+  routes:
+    test:
+      path: /**
+      url: http://localhost:${service-b-port}
