@@ -1,4 +1,4 @@
-package com.github.alanraison.sleuthservicea;
+package com.github.alanraison.sleuth.servicea;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

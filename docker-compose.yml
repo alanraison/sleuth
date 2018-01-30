@@ -5,6 +5,7 @@ services:
     ports:
     - "9411:9411"
   service-a:
+    image: sleuth_service_a
     build:
       context: .
       dockerfile: sleuth-service-a/Dockerfile
@@ -17,6 +18,7 @@ services:
     depends_on:
     - zipkin
   service-b:
+    image: sleuth_service_b
     build:
       context: .
       dockerfile: sleuth-service-b/Dockerfile

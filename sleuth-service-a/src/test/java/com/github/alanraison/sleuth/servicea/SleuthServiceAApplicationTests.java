@@ -1,4 +1,4 @@
-package com.github.alanraison.sleuthservicea;
+package com.github.alanraison.sleuth.servicea;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
