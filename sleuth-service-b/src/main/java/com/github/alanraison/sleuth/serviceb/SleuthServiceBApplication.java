@@ -17,4 +17,5 @@ public class SleuthServiceBApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SleuthServiceBApplication.class, args);
 	}
+
 }
